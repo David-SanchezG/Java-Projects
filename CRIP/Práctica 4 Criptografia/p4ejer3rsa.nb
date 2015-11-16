@@ -1,0 +1,240 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[      9033,        231]
+NotebookOptionsPosition[      8516,        209]
+NotebookOutlinePosition[      8860,        224]
+CellTagsIndexPosition[      8817,        221]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"rsacifrar", "[", 
+   RowBox[{"texto_", ",", "p_", ",", "q_", ",", "e_"}], "]"}], ":=", 
+  RowBox[{"(", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"n", "=", 
+     RowBox[{"p", " ", "q"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"fidn", "=", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"p", "-", "1"}], ")"}], "*", 
+      RowBox[{"(", 
+       RowBox[{"q", "-", "1"}], ")"}]}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"mcdef", "=", 
+     RowBox[{"ExtendedGCD", "[", 
+      RowBox[{"e", ",", "fidn"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"mcdef", "[", 
+        RowBox[{"[", "1", "]"}], "]"}], "\[NotEqual]", "1"}], ",", 
+      RowBox[{"return", " ", "\"\<e no es coprimo con fi de n\>\""}]}], "]"}],
+     ";", "\[IndentingNewLine]", 
+    RowBox[{"d", "=", 
+     RowBox[{"PowerMod", "[", 
+      RowBox[{"e", ",", 
+       RowBox[{"-", "1"}], ",", "fidn"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"mcded", "=", 
+     RowBox[{"Mod", "[", 
+      RowBox[{
+       RowBox[{"e", " ", "d"}], ",", "fidn"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{"mcded", "\[NotEqual]", "1"}], ",", 
+      RowBox[{"return", " ", "\"\<ed no es 1 modulo fi de n\>\""}]}], "]"}], 
+    ";", "\[IndentingNewLine]", 
+    RowBox[{"mensaje", "=", 
+     RowBox[{"ToCharacterCode", "[", "texto", "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"salida", "=", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"PowerMod", "[", 
+        RowBox[{
+         RowBox[{"mensaje", "[", 
+          RowBox[{"[", "i", "]"}], "]"}], ",", "e", ",", "n"}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", "1", ",", 
+         RowBox[{"Length", "[", "mensaje", "]"}]}], "}"}]}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Return", "[", "salida", "]"}], ";"}], "\[IndentingNewLine]", 
+   ")"}]}]], "Input",
+ CellChangeTimes->{
+  3.548085910581048*^9, {3.5480861664966855`*^9, 3.5480861882739305`*^9}, {
+   3.548086261809137*^9, 3.5480862631132116`*^9}, {3.5480863791768503`*^9, 
+   3.548086426768572*^9}, {3.548088723247923*^9, 3.5480888346552954`*^9}, {
+   3.548088962143587*^9, 3.5480889710470963`*^9}, {3.5480890171347322`*^9, 
+   3.548089039380005*^9}, {3.548089072255885*^9, 3.548089091710998*^9}, {
+   3.548089142902926*^9, 3.5480891661342545`*^9}, {3.5480893223251886`*^9, 
+   3.5480893489887133`*^9}, {3.548491040554605*^9, 3.5484910441938133`*^9}, {
+   3.548491112217704*^9, 3.548491112905743*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"rsacifrar", "[", 
+  RowBox[{
+  "\"\<Esto es una prueba de cifrado con RSA\>\"", ",", 
+   "76476921620224718183193049794558265410577251749208708586248107346534514483\
+889846460461698637074808327", ",", 
+   "98840891585055923586492855112165248869219609281790800033303902137299253680\
+661412273648646083068197427", ",", "3"}], "]"}]], "Input",
+ CellChangeTimes->{{3.5480891889125576`*^9, 3.5480892393394423`*^9}, {
+  3.548491116847969*^9, 3.548491117552009*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "328509", ",", "1520875", ",", "1560896", ",", "1367631", ",", "32768", ",",
+    "1030301", ",", "1520875", ",", "32768", ",", "1601613", ",", "1331000", 
+   ",", "912673", ",", "32768", ",", "1404928", ",", "1481544", ",", 
+   "1601613", ",", "1030301", ",", "941192", ",", "912673", ",", "32768", ",",
+    "1000000", ",", "1030301", ",", "32768", ",", "970299", ",", "1157625", 
+   ",", "1061208", ",", "1481544", ",", "912673", ",", "1000000", ",", 
+   "1367631", ",", "32768", ",", "970299", ",", "1367631", ",", "1331000", 
+   ",", "32768", ",", "551368", ",", "571787", ",", "274625"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{
+  3.548089240305497*^9, {3.5480893319407387`*^9, 3.548089350778816*^9}, 
+   3.5480894992023053`*^9, {3.548491096360797*^9, 3.5484911227233047`*^9}, 
+   3.5484928116929083`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"rsadescifrar", "[", 
+   RowBox[{"texto_", ",", "p_", ",", "q_", ",", "e_"}], "]"}], ":=", 
+  RowBox[{"(", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"n", "=", 
+     RowBox[{"p", " ", "q"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"fidn", "=", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"p", "-", "1"}], ")"}], "*", 
+      RowBox[{"(", 
+       RowBox[{"q", "-", "1"}], ")"}]}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"mcdef", "=", 
+     RowBox[{"ExtendedGCD", "[", 
+      RowBox[{"e", ",", "fidn"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"mcdef", "[", 
+        RowBox[{"[", "1", "]"}], "]"}], "\[NotEqual]", "1"}], ",", 
+      RowBox[{"return", " ", "\"\<e no es coprimo con fi de n\>\""}]}], "]"}],
+     ";", "\[IndentingNewLine]", 
+    RowBox[{"d", "=", 
+     RowBox[{"PowerMod", "[", 
+      RowBox[{"e", ",", 
+       RowBox[{"-", "1"}], ",", "fidn"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"mcded", "=", 
+     RowBox[{"Mod", "[", 
+      RowBox[{
+       RowBox[{"e", " ", "d"}], ",", "fidn"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{"mcded", "\[NotEqual]", "1"}], ",", 
+      RowBox[{"return", " ", "\"\<ed no es 1 modulo fi de n\>\""}]}], "]"}], 
+    ";", "\[IndentingNewLine]", 
+    RowBox[{"descifrado", "=", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"PowerMod", "[", 
+        RowBox[{
+         RowBox[{"texto", "[", 
+          RowBox[{"[", "i", "]"}], "]"}], ",", "d", ",", "n"}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", "1", ",", 
+         RowBox[{"Length", "[", "texto", "]"}]}], "}"}]}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"salida", "=", 
+     RowBox[{"FromCharacterCode", "[", "descifrado", "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Return", "[", "salida", "]"}], ";"}], "\[IndentingNewLine]", 
+   ")"}]}]], "Input",
+ CellChangeTimes->{
+  3.548085910581048*^9, {3.5480861664966855`*^9, 3.5480861882739305`*^9}, {
+   3.548086261809137*^9, 3.5480862631132116`*^9}, {3.5480863791768503`*^9, 
+   3.548086426768572*^9}, {3.548088723247923*^9, 3.5480888346552954`*^9}, {
+   3.548088962143587*^9, 3.5480889710470963`*^9}, {3.5480890171347322`*^9, 
+   3.548089039380005*^9}, {3.548089072255885*^9, 3.548089091710998*^9}, {
+   3.548089142902926*^9, 3.5480891661342545`*^9}, {3.5480893223251886`*^9, 
+   3.5480893489887133`*^9}, {3.548490802043963*^9, 3.548490831435644*^9}, {
+   3.5484911065303783`*^9, 3.548491107705446*^9}, {3.548492571399164*^9, 
+   3.5484925826628084`*^9}, {3.5484927695274963`*^9, 3.5484927897906556`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"rsadescifrar", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+    "328509", ",", "1520875", ",", "1560896", ",", "1367631", ",", "32768", 
+     ",", "1030301", ",", "1520875", ",", "32768", ",", "1601613", ",", 
+     "1331000", ",", "912673", ",", "32768", ",", "1404928", ",", "1481544", 
+     ",", "1601613", ",", "1030301", ",", "941192", ",", "912673", ",", 
+     "32768", ",", "1000000", ",", "1030301", ",", "32768", ",", "970299", 
+     ",", "1157625", ",", "1061208", ",", "1481544", ",", "912673", ",", 
+     "1000000", ",", "1367631", ",", "32768", ",", "970299", ",", "1367631", 
+     ",", "1331000", ",", "32768", ",", "551368", ",", "571787", ",", 
+     "274625"}], "}"}], ",", 
+   "76476921620224718183193049794558265410577251749208708586248107346534514483\
+889846460461698637074808327", ",", 
+   "98840891585055923586492855112165248869219609281790800033303902137299253680\
+661412273648646083068197427", ",", "3"}], "]"}]], "Input",
+ CellChangeTimes->{{3.5484911348309975`*^9, 3.5484911350470095`*^9}, {
+  3.548492412031049*^9, 3.548492428047965*^9}}],
+
+Cell[BoxData["\<\"Esto es una prueba de cifrado con RSA\"\>"], "Output",
+ CellChangeTimes->{
+  3.548492436545451*^9, 3.5484925865410304`*^9, {3.548492783465294*^9, 
+   3.5484928154771247`*^9}}]
+}, Open  ]]
+},
+WindowSize->{1664, 915},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"7.0 for Microsoft Windows (64-bit) (November 10, 2008)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[545, 20, 2578, 62, 252, "Input"],
+Cell[CellGroupData[{
+Cell[3148, 86, 483, 9, 52, "Input"],
+Cell[3634, 97, 852, 15, 50, "Output"]
+}, Open  ]],
+Cell[4501, 115, 2689, 63, 252, "Input"],
+Cell[CellGroupData[{
+Cell[7215, 182, 1089, 19, 92, "Input"],
+Cell[8307, 203, 193, 3, 30, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

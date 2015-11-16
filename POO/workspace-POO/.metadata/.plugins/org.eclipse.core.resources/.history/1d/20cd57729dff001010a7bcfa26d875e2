@@ -1,0 +1,42 @@
+
+public class Principal {
+
+	
+	
+	
+	private static int puntos;
+
+	public static void main(String[] args) {
+		int i, x , y;
+		cuerpo vector;
+		
+		
+		
+		System.out.println("Escriba el numero de puntos del cuerpo geometrico");
+		puntos=Teclado.leerInt();
+		vector.cuerpo(puntos);
+		
+		
+		
+		i=0;
+		do{
+			
+			
+			
+			System.out.println("Escriba la primera coordenada");
+			x=Teclado.leerInt();
+			
+			System.out.println("Escriba la primera coordenada");
+			y=Teclado.leerInt();
+			
+			
+			
+
+
+			
+			i++;
+		}while(i < puntos);
+
+	}
+
+}

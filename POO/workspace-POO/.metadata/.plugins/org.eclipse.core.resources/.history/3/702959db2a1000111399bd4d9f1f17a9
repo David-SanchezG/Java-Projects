@@ -1,0 +1,40 @@
+//import java.applet.Applet;
+//import java.awt.*;
+
+
+
+public class Tablero extends tablero_visible
+{
+	private static int nfichas;
+
+	
+	
+	public static void main(String[] args) 
+	{
+		
+		tablero_visible opcion = null;
+		
+		opcion.init(nfichas);
+		
+		
+		
+		
+	}
+	
+	
+	public void jugadavalida()
+	{
+		
+	}
+	
+	public void mostrarjugada()
+	{
+		
+	}
+	
+	
+	
+}
+
+
+
