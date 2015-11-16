@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;Monomio&apos; to &apos;Termino&apos;&#x0D;&#x0A;- Original project: &apos;monopoli&apos;&#x0D;&#x0A;- Original element: &apos;Monomio&apos;&#x0D;&#x0A;- Renamed element: &apos;Termino&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Monomio&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{Monomio.java[Monomio" matchStrategy="1" name="Termino" qualified="false" references="true" similarDeclarations="false" stamp="1320230076952" textual="false" version="1.0"/>
-</session>

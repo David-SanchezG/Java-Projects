@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Move 3 elements to &apos;solitariocartas/src&apos;&#x0D;&#x0A;- Original project: &apos;solitariocartas&apos;&#x0D;&#x0A;- Destination element: &apos;solitariocartas/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     CardPile.java&#x0D;&#x0A;     Solitare.java&#x0D;&#x0A;     Card.java&#x0D;&#x0A;- Update references to refactored element" description="Move files" destination="/src" element1="CardPile.java" element2="Solitare.java" element3="Card.java" files="3" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1320220320525" units="0" version="1.0"/>
-</session>
