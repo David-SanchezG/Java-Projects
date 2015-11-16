@@ -1,0 +1,32 @@
+//import java.applet.Applet;
+//import java.awt.*;
+
+
+
+public class Tablero 
+{
+	public int nfichas;
+
+	
+	public Tablero() 
+	{
+		nfichas=0;
+	}
+	
+	
+	public void jugadavalida()
+	{
+		
+	}
+	
+	public void mostrarjugada()
+	{
+		
+	}
+	
+	
+	
+}
+
+
+

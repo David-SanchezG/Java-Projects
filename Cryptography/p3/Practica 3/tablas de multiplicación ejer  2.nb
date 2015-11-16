@@ -1,0 +1,1039 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     27509,       1030]
+NotebookOptionsPosition[     22595,        849]
+NotebookOutlinePosition[     22938,        864]
+CellTagsIndexPosition[     22895,        861]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{"x", "*", "x"}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "1"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.545583390304643*^9, 3.5455833968130155`*^9}, {
+  3.5455836033688297`*^9, 3.5455836171606183`*^9}, {3.5455836967051682`*^9, 
+  3.5455837027765155`*^9}}],
+
+Cell[BoxData["2"], "Output",
+ CellChangeTimes->{{3.5455836750419292`*^9, 3.545583703014529*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{"x", "*", 
+    RowBox[{"(", 
+     RowBox[{"x", "+", "1"}], ")"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "1"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.54558371578426*^9, 3.545583722064619*^9}}],
+
+Cell[BoxData[
+ RowBox[{"2", "+", "x"}]], "Output",
+ CellChangeTimes->{3.54558372296367*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{"x", "*", 
+    RowBox[{"(", 
+     RowBox[{"x", "+", "2"}], ")"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "1"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5455837395046163`*^9, 3.54558373957662*^9}}],
+
+Cell[BoxData[
+ RowBox[{"2", "+", 
+  RowBox[{"2", " ", "x"}]}]], "Output",
+ CellChangeTimes->{3.5455837403086624`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{"x", "*", "2", "x"}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "1"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.54558378100799*^9, 3.545583781920042*^9}}],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{3.545583783652141*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{"x", "*", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", "x"}], "+", "1"}], ")"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "1"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{3.5455837497042*^9}],
+
+Cell[BoxData[
+ RowBox[{"1", "+", "x"}]], "Output",
+ CellChangeTimes->{3.5455837504842443`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{"x", "*", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", "x"}], "+", "2"}], ")"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "1"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5455837644560432`*^9, 3.5455837660801363`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"1", "+", 
+  RowBox[{"2", " ", "x"}]}]], "Output",
+ CellChangeTimes->{3.545583766901183*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"x", "+", "1"}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{"x", "+", "1"}], ")"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "1"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5455837977759495`*^9, 3.5455838000880814`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"2", " ", "x"}]], "Output",
+ CellChangeTimes->{3.545583802053194*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"x", "+", "1"}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{"x", "+", "2"}], ")"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "1"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5455838143518972`*^9, 3.545583819176173*^9}}],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{3.5455838203172383`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"x", "+", "1"}], ")"}], "*", "2", "x"}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "1"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5455838283837*^9, 3.545583828679717*^9}}],
+
+Cell[BoxData[
+ RowBox[{"1", "+", 
+  RowBox[{"2", " ", "x"}]}]], "Output",
+ CellChangeTimes->{3.5455838297407775`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"x", "+", "1"}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", "x"}], "+", "1"}], ")"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "1"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{3.5455838400073643`*^9}],
+
+Cell[BoxData["2"], "Output",
+ CellChangeTimes->{3.545583842476506*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"x", "+", "1"}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", "x"}], "+", "2"}], ")"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "1"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5455838489678774`*^9, 3.545583851135001*^9}}],
+
+Cell[BoxData["x"], "Output",
+ CellChangeTimes->{3.545583851828041*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"x", "+", "2"}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{"x", "+", "2"}], ")"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "1"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5455838601595173`*^9, 3.5455838624156466`*^9}}],
+
+Cell[BoxData["x"], "Output",
+ CellChangeTimes->{3.545583866428876*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"x", "+", "2"}], ")"}], "*", "2", "x"}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "1"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.545583877879531*^9, 3.545583878079542*^9}}],
+
+Cell[BoxData[
+ RowBox[{"1", "+", "x"}]], "Output",
+ CellChangeTimes->{3.545583878861587*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"x", "+", "2"}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", "x"}], "+", "1"}], ")"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "1"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5455838867270365`*^9, 3.5455838880871143`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"2", " ", "x"}]], "Output",
+ CellChangeTimes->{3.54558388870815*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"x", "+", "2"}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", "x"}], "+", "2"}], ")"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "1"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{3.545583897711665*^9}],
+
+Cell[BoxData["2"], "Output",
+ CellChangeTimes->{3.5455838978526735`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{"2", "x", "*", "2", "x"}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "1"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5455839601032333`*^9, 3.5455839881108356`*^9}}],
+
+Cell[BoxData["2"], "Output",
+ CellChangeTimes->{3.545583991572034*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{"2", "x", "*", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", "x"}], "+", "1"}], ")"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "1"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.545583999326477*^9, 3.545584002190641*^9}}],
+
+Cell[BoxData[
+ RowBox[{"2", "+", 
+  RowBox[{"2", " ", "x"}]}]], "Output",
+ CellChangeTimes->{3.5455840032186995`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{"2", "x", "*", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", "x"}], "+", "2"}], ")"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "1"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5455840139743147`*^9, 3.5455840176945276`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"2", "+", "x"}]], "Output",
+ CellChangeTimes->{3.5455840184105687`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", "x"}], "+", "1"}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", "x"}], "+", "1"}], ")"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "1"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5455840736377277`*^9, 3.545584081302166*^9}}],
+
+Cell[BoxData["x"], "Output",
+ CellChangeTimes->{3.5455840842513347`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", "x"}], "+", "1"}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", "x"}], "+", "2"}], ")"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "1"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5455840947509356`*^9, 3.545584105957576*^9}}],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{3.545584106882629*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", "x"}], "+", "2"}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", "x"}], "+", "2"}], ")"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "1"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.545584113181989*^9, 3.545584115877144*^9}}],
+
+Cell[BoxData[
+ RowBox[{"2", " ", "x"}]], "Output",
+ CellChangeTimes->{3.545584116483178*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.5455843443482113`*^9, 3.54558434467623*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{"x", "*", "x"}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "x", "+", "2"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.545583390304643*^9, 3.5455833968130155`*^9}, {
+  3.5455836033688297`*^9, 3.5455836171606183`*^9}, {3.5455836967051682`*^9, 
+  3.5455837027765155`*^9}, {3.5455843574279594`*^9, 3.5455843579319882`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"1", "+", 
+  RowBox[{"2", " ", "x"}]}]], "Output",
+ CellChangeTimes->{{3.5455836750419292`*^9, 3.545583703014529*^9}, 
+   3.5455844156642904`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{"x", "*", 
+    RowBox[{"(", 
+     RowBox[{"x", "+", "1"}], ")"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "x", "+", "2"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.54558371578426*^9, 3.545583722064619*^9}, 
+   3.5455843658604417`*^9}],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{3.54558372296367*^9, 3.5455844168893604`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{"x", "*", 
+    RowBox[{"(", 
+     RowBox[{"x", "+", "2"}], ")"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "x", "+", "2"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5455837395046163`*^9, 3.54558373957662*^9}, 
+   3.545584367899558*^9}],
+
+Cell[BoxData[
+ RowBox[{"1", "+", "x"}]], "Output",
+ CellChangeTimes->{3.5455837403086624`*^9, 3.545584417697407*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{"x", "*", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", "x"}], "+", "1"}], ")"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "x", "+", "2"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{3.5455837497042*^9, 3.545584370715719*^9}],
+
+Cell[BoxData[
+ RowBox[{"2", "+", 
+  RowBox[{"2", " ", "x"}]}]], "Output",
+ CellChangeTimes->{3.5455837504842443`*^9, 3.545584418688463*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{"x", "*", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", "x"}], "+", "2"}], ")"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "x", "+", "2"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5455837644560432`*^9, 3.5455837660801363`*^9}, 
+   3.545584373803896*^9}],
+
+Cell[BoxData["2"], "Output",
+ CellChangeTimes->{3.545583766901183*^9, 3.5455844192974977`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{"x", "*", "2", "x"}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "x", "+", "2"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.54558378100799*^9, 3.545583781920042*^9}, 
+   3.545584375708005*^9}],
+
+Cell[BoxData[
+ RowBox[{"2", "+", "x"}]], "Output",
+ CellChangeTimes->{3.545583783652141*^9, 3.5455844202085505`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"x", "+", "1"}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{"x", "+", "1"}], ")"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "x", "+", "2"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5455837977759495`*^9, 3.5455838000880814`*^9}, 
+   3.545584378372157*^9}],
+
+Cell[BoxData[
+ RowBox[{"2", "+", "x"}]], "Output",
+ CellChangeTimes->{3.545583802053194*^9, 3.5455844222006645`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"x", "+", "1"}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{"x", "+", "2"}], ")"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "x", "+", "2"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5455838143518972`*^9, 3.545583819176173*^9}, 
+   3.5455843808042965`*^9}],
+
+Cell[BoxData[
+ RowBox[{"2", " ", "x"}]], "Output",
+ CellChangeTimes->{3.5455838203172383`*^9, 3.545584423312728*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"x", "+", "1"}], ")"}], "*", "2", "x"}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "x", "+", "2"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5455838283837*^9, 3.545583828679717*^9}, 
+   3.5455843826924047`*^9}],
+
+Cell[BoxData["2"], "Output",
+ CellChangeTimes->{3.5455838297407775`*^9, 3.545584423928763*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"x", "+", "1"}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", "x"}], "+", "1"}], ")"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "x", "+", "2"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{3.5455838400073643`*^9, 3.5455843852675514`*^9}],
+
+Cell[BoxData["x"], "Output",
+ CellChangeTimes->{3.545583842476506*^9, 3.5455844244647937`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"x", "+", "1"}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", "x"}], "+", "2"}], ")"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "x", "+", "2"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5455838489678774`*^9, 3.545583851135001*^9}, 
+   3.545584387987707*^9}],
+
+Cell[BoxData[
+ RowBox[{"1", "+", 
+  RowBox[{"2", " ", "x"}]}]], "Output",
+ CellChangeTimes->{3.545583851828041*^9, 3.545584424955822*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"x", "+", "2"}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{"x", "+", "2"}], ")"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "x", "+", "2"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5455838601595173`*^9, 3.5455838624156466`*^9}, 
+   3.5455843902198353`*^9}],
+
+Cell[BoxData["2"], "Output",
+ CellChangeTimes->{3.545583866428876*^9, 3.5455844254408493`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"x", "+", "2"}], ")"}], "*", "2", "x"}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "x", "+", "2"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.545583877879531*^9, 3.545583878079542*^9}, 
+   3.5455843925559683`*^9}],
+
+Cell[BoxData[
+ RowBox[{"2", "+", 
+  RowBox[{"2", " ", "x"}]}]], "Output",
+ CellChangeTimes->{3.545583878861587*^9, 3.5455844259848804`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"x", "+", "2"}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", "x"}], "+", "1"}], ")"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "x", "+", "2"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5455838867270365`*^9, 3.5455838880871143`*^9}, 
+   3.545584394804097*^9}],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{3.54558388870815*^9, 3.5455844264809093`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"x", "+", "2"}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", "x"}], "+", "2"}], ")"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "x", "+", "2"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{3.545583897711665*^9, 3.5455843967962112`*^9}],
+
+Cell[BoxData["x"], "Output",
+ CellChangeTimes->{3.5455838978526735`*^9, 3.545584427000939*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{"2", "x", "*", "2", "x"}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "x", "+", "2"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5455839601032333`*^9, 3.5455839881108356`*^9}, 
+   3.5455843996193724`*^9}],
+
+Cell[BoxData[
+ RowBox[{"1", "+", 
+  RowBox[{"2", " ", "x"}]}]], "Output",
+ CellChangeTimes->{3.545583991572034*^9, 3.5455844275049677`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{"2", "x", "*", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", "x"}], "+", "1"}], ")"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "x", "+", "2"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.545583999326477*^9, 3.545584002190641*^9}, 
+   3.5455844018675013`*^9}],
+
+Cell[BoxData[
+ RowBox[{"1", "+", "x"}]], "Output",
+ CellChangeTimes->{3.5455840032186995`*^9, 3.545584428714037*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{"2", "x", "*", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", "x"}], "+", "2"}], ")"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "x", "+", "2"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5455840139743147`*^9, 3.5455840176945276`*^9}, 
+   3.5455844043636436`*^9}],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{3.5455840184105687`*^9, 3.5455844300571136`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", "x"}], "+", "1"}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", "x"}], "+", "1"}], ")"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "x", "+", "2"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5455840736377277`*^9, 3.545584081302166*^9}, 
+   3.5455844065327682`*^9}],
+
+Cell[BoxData["2"], "Output",
+ CellChangeTimes->{3.5455840842513347`*^9, 3.545584430712151*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", "x"}], "+", "1"}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", "x"}], "+", "2"}], ")"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "x", "+", "2"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5455840947509356`*^9, 3.545584105957576*^9}, 
+   3.545584408155861*^9}],
+
+Cell[BoxData[
+ RowBox[{"2", " ", "x"}]], "Output",
+ CellChangeTimes->{3.545584106882629*^9, 3.545584431321186*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", "x"}], "+", "2"}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", "x"}], "+", "2"}], ")"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "x", "+", "2"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.545584113181989*^9, 3.545584115877144*^9}, 
+   3.5455844102439804`*^9}],
+
+Cell[BoxData[
+ RowBox[{"2", "+", "x"}]], "Output",
+ CellChangeTimes->{3.545584116483178*^9, 3.545584432023226*^9}]
+}, Open  ]]
+},
+WindowSize->{607, 750},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"7.0 for Microsoft Windows (64-bit) (November 10, 2008)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 382, 9, 31, "Input"],
+Cell[952, 33, 96, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1085, 39, 324, 9, 31, "Input"],
+Cell[1412, 50, 91, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1540, 57, 326, 9, 31, "Input"],
+Cell[1869, 68, 117, 3, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2023, 76, 278, 7, 31, "Input"],
+Cell[2304, 85, 70, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2411, 91, 321, 10, 31, "Input"],
+Cell[2735, 103, 94, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2866, 110, 351, 10, 31, "Input"],
+Cell[3220, 122, 115, 3, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3372, 130, 380, 11, 31, "Input"],
+Cell[3755, 143, 92, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3884, 150, 378, 11, 31, "Input"],
+Cell[4265, 163, 72, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4374, 169, 328, 9, 31, "Input"],
+Cell[4705, 180, 117, 3, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4859, 188, 376, 12, 31, "Input"],
+Cell[5238, 202, 70, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5345, 208, 400, 12, 31, "Input"],
+Cell[5748, 222, 70, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5855, 228, 380, 11, 31, "Input"],
+Cell[6238, 241, 70, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6345, 247, 330, 9, 31, "Input"],
+Cell[6678, 258, 92, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6807, 265, 402, 12, 31, "Input"],
+Cell[7212, 279, 91, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7340, 286, 374, 12, 31, "Input"],
+Cell[7717, 300, 72, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7826, 306, 288, 7, 31, "Input"],
+Cell[8117, 315, 70, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8224, 321, 352, 10, 31, "Input"],
+Cell[8579, 333, 117, 3, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8733, 341, 356, 10, 31, "Input"],
+Cell[9092, 353, 94, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9223, 360, 422, 13, 31, "Input"],
+Cell[9648, 375, 72, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9757, 381, 422, 13, 31, "Input"],
+Cell[10182, 396, 70, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10289, 402, 420, 13, 31, "Input"],
+Cell[10712, 417, 92, 2, 30, "Output"]
+}, Open  ]],
+Cell[10819, 422, 173, 3, 92, "Input"],
+Cell[CellGroupData[{
+Cell[11017, 429, 442, 9, 31, "Input"],
+Cell[11462, 440, 169, 4, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11668, 449, 362, 10, 31, "Input"],
+Cell[12033, 461, 93, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12163, 467, 362, 10, 31, "Input"],
+Cell[12528, 479, 116, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12681, 486, 353, 10, 31, "Input"],
+Cell[13037, 498, 139, 3, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13213, 506, 387, 11, 31, "Input"],
+Cell[13603, 519, 94, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13734, 525, 314, 8, 31, "Input"],
+Cell[14051, 535, 116, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14204, 542, 416, 12, 31, "Input"],
+Cell[14623, 556, 116, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14776, 563, 416, 12, 31, "Input"],
+Cell[15195, 577, 116, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15348, 584, 366, 10, 31, "Input"],
+Cell[15717, 596, 94, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15848, 602, 410, 12, 31, "Input"],
+Cell[16261, 616, 94, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16392, 622, 436, 13, 31, "Input"],
+Cell[16831, 637, 137, 3, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17005, 645, 418, 12, 31, "Input"],
+Cell[17426, 659, 94, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17557, 665, 368, 10, 31, "Input"],
+Cell[17928, 677, 139, 3, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18104, 685, 438, 13, 31, "Input"],
+Cell[18545, 700, 93, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18675, 706, 408, 12, 31, "Input"],
+Cell[19086, 720, 94, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19217, 726, 326, 8, 31, "Input"],
+Cell[19546, 736, 139, 3, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19722, 744, 390, 11, 31, "Input"],
+Cell[20115, 757, 116, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20268, 764, 394, 11, 31, "Input"],
+Cell[20665, 777, 96, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20798, 783, 460, 14, 31, "Input"],
+Cell[21261, 799, 94, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21392, 805, 458, 14, 31, "Input"],
+Cell[21853, 821, 114, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22004, 828, 458, 14, 31, "Input"],
+Cell[22465, 844, 114, 2, 30, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

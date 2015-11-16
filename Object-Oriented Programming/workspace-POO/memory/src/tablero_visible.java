@@ -1,0 +1,122 @@
+import java.awt.*;
+import java.awt.event.MouseListener;
+import java.applet.Applet;
+import javax.swing.*;
+
+
+
+
+
+
+public class tablero_visible extends Applet
+{
+	Choice bopcion;
+	Label etiqueta1;
+	Panel mostrar;
+	Button aceptar;
+
+	
+	
+	public void init() 
+	{
+		String elecciondesplegable;
+		mostrar = new Panel();
+		setLayout(null);
+		aceptar = new Button("Aceptar");
+		Tablero tablero=new Tablero();
+		
+		add(mostrar);
+		mostrar.setBounds( 0, 0, 500, 300 );
+		mostrar.setBackground(Color.RED);
+		setSize(500, 300);
+		etiqueta1= new Label("Seleccione el número de fichas para el tablero");
+		bopcion = new Choice();
+		bopcion.add("Cuatro");
+		bopcion.add("Seis");
+		bopcion.add("Ocho");
+		bopcion.add("Diez");
+		bopcion.add("Doce");
+		bopcion.add("Catorce");
+		bopcion.add("Dieciseis");
+		bopcion.add("Dieciocho");
+		bopcion.add("Veinte");
+		mostrar.add(etiqueta1);
+		mostrar.add(bopcion);
+		mostrar.add(aceptar);
+		
+		MouseListener l = null;
+		while(l==null)
+		{
+			aceptar.addMouseListener(l);
+		}
+		
+		elecciondesplegable=bopcion.getSelectedItem();
+		if(elecciondesplegable.compareTo("Cuatro")==0)
+		{
+			tablero.nfichas=4;
+		}
+		else
+		{
+			if(elecciondesplegable.compareTo("Seis")==0)
+			{
+				tablero.nfichas=6;
+			}
+			else
+			{
+				if(elecciondesplegable.compareTo("Ocho")==0)
+				{
+					tablero.nfichas=8;
+				}
+				else
+				{
+					if(elecciondesplegable.compareTo("Diez")==0)
+					{
+						tablero.nfichas=10;
+					}
+					else
+					{
+						if(elecciondesplegable.compareTo("Doce")==0)
+						{
+							tablero.nfichas=12;
+						}
+						else
+						{
+							if(elecciondesplegable.compareTo("Catorce")==0)
+							{
+								tablero.nfichas=14;
+							}
+							else
+							{
+								if(elecciondesplegable.compareTo("Dieciseis")==0)
+								{
+									tablero.nfichas=16;
+								}
+								else
+								{
+									if(elecciondesplegable.compareTo("Dieciocho")==0)
+									{
+										tablero.nfichas=18;
+									}
+									else
+									{
+										if(elecciondesplegable.compareTo("Veinte")==0)
+										{
+											tablero.nfichas=20;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}		
+		//mostrar.setVisible(false);
+	}
+	
+	
+	
+	
+
+
+}

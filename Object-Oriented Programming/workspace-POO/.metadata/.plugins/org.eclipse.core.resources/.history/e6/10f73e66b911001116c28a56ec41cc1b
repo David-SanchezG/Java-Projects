@@ -1,0 +1,41 @@
+//import java.applet.Applet;
+//import java.awt.*;
+
+
+
+public class Tablero 
+{
+	public int nfichas;
+
+	
+    public static void main(String args[]) {
+        java.awt.EventQueue.invokeLater(new Runnable() {
+
+            public void run() {
+                new tablero_visible().setVisible(true);
+            }
+        });
+    }
+	
+	public Tablero() 
+	{
+		nfichas=0;
+	}
+	
+	
+	public void jugadavalida()
+	{
+		
+	}
+	
+	public void mostrarjugada()
+	{
+		
+	}
+	
+	
+	
+}
+
+
+
